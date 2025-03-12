@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mainBackGround: #202020;
+  --color-mainColor: #8774e1;
+  --color-subText: #ced4da;
+}
+
+.main-heading {
+  font-size: var(--text-3xl);
+  line-height: var(--tw-leading, var(--text-3xl--line-height));
+}
+
+.sub-heading {
+  font-size: var(--text-xl) /* 1.25rem = 20px */;
+  line-height: var(
+    --tw-leading,
+    var(--text-xl--line-height) /* calc(1.75 / 1.25) ≈ 1.4 */
+  );
+}
+
+.signUp-input-form {
+  border-radius: 9px;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  outline: #606060 solid 1px;
+}
+
+.btn-primary {
+  padding: 0.8rem;
+  border-radius: 9px;
+  text-transform: uppercase;
+}
+
+.picture {
+  height: 3rem;
+}
