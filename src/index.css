@@ -2,8 +2,16 @@
 
 @theme {
   --color-mainBackGround: #202020;
+  --color-subBackGround: #333533;
   --color-mainColor: #8774e1;
   --color-subText: #ced4da;
+}
+
+body {
+  background-color: var(--color-mainBackGround);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .main-heading {
