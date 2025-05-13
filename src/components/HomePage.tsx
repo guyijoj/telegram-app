@@ -1,5 +1,3 @@
-import React from "react";
-
 export const HomePage = () => {
   return (
     <div className="flex flex-col gap-2.5 justify-center self-center h-screen">

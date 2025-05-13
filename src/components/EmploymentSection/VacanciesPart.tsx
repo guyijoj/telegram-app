@@ -1,5 +1,3 @@
-import React from "react";
-import { AddInfoVacancies } from "./AddInfoVacancies";
 import { Forms } from "./Context/Context";
 
 interface VacanciesProps {

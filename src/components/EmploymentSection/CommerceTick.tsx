@@ -1,4 +1,4 @@
-import React, { HtmlHTMLAttributes, useState } from "react";
+import React, { useState } from "react";
 
 interface CommerceTickProps {
   firstValue: number;
@@ -6,11 +6,7 @@ interface CommerceTickProps {
   onChange: (firstValue: number, secondvalue: number) => void;
 }
 
-export const CommerceTick = ({
-  firstValue,
-  secondvalue,
-  onChange,
-}: CommerceTickProps) => {
+export const CommerceTick = ({ onChange }: CommerceTickProps) => {
   const [isFocused1, setFocuse1] = useState(false);
   const [isFocused2, setFocuse2] = useState(false);
   const [ValueFrom, setValueFrom] = useState<number>(0);

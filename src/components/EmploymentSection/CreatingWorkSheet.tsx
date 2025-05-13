@@ -1,6 +1,5 @@
-import React, { useContext, useState } from "react";
-import { Form, Navigate, NavLink } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { Form } from "react-router-dom";
 import { IconComponents } from "../Icon/IconComponents";
 import { SearchProfessionBar } from "./SearchProfessionBar";
 import { CommerceTick } from "./CommerceTick";
@@ -11,7 +10,7 @@ import { Terms } from "./Terms";
 import { Experience } from "./Experience";
 import { Select } from "../other/Select";
 import "react-datepicker/dist/react-datepicker.css";
-import { FormContext, Forms, useFormData } from "./Context/Context";
+import { Forms, useFormData } from "./Context/Context";
 
 export const CreatingWorkSheet = () => {
   const { setSheetsList, setCreateSheetSwitch } = useFormData();

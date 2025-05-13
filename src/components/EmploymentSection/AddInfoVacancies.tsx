@@ -1,5 +1,3 @@
-import React from "react";
-
 export const AddInfoVacancies = () => {
   return (
     <div className="flex gap-2 mb-6">

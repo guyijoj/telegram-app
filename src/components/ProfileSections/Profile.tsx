@@ -1,4 +1,3 @@
-import React from "react";
 import { ProfileCard } from "./ProfileCard";
 import { ProfileDescription } from "./ProfileDescription";
 

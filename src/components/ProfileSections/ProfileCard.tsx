@@ -1,5 +1,3 @@
-import React from "react";
-
 export const ProfileCard = () => {
   return (
     <div className="main-part flex flex-col justify-between items-center text-white bg-mainColor h-70 text-center p-5 rounded-b-lg">

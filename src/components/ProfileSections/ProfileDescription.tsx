@@ -1,4 +1,3 @@
-import React from "react";
 import { DescriptionSection } from "./DescriptionSection";
 
 export const ProfileDescription = () => {

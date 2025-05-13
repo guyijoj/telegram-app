@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 interface AboutWorkProps {
   value: string;
   onChange: (value: string) => void;

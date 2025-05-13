@@ -1,5 +1,3 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
 import { IconComponents } from "../Icon/IconComponents";
 import { VacanciesPart } from "./VacanciesPart";
 import { useFormData } from "./Context/Context";
