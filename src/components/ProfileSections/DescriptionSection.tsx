@@ -14,8 +14,8 @@ export const DescriptionSection = ({
   icon,
 }: DescriptionProps) => {
   return (
-    <div className="text-white m-4 pb-4 not-last:border-b border-subText">
-      <h2 className=" text-2xl mb-2">{children}</h2>
+    <div className=" m-4 pb-4 not-last:border-b border-subText">
+      <h2 className=" text-2xl mb-2 text-mainText">{children}</h2>
       {type === "list" ? (
         <ul className="list-disc ml-5 text-subText">
           <li>Позитивность</li>
@@ -28,8 +28,8 @@ export const DescriptionSection = ({
         </p>
       ) : (
         <div className="flex items-center gap-3">
-          <div className="bg-white p-1.5 rounded-lg">
-            <IconComponents name={icon} color="mainColor" size={22} />
+          <div className="bg-mainText p-1.5 rounded-lg">
+            <IconComponents name={icon} color="#8774e1" size={22} />
           </div>
           <p className="text-subText">{text}</p>
         </div>

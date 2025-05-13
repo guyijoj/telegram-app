@@ -1,10 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import "tailwindcss";
 
 @theme {
   --color-mainBackGround: #202020;
+  --color-lightBackGround: #303030;
+  --color-mainText: #e9ecef;
   --color-subBackGround: #333533;
   --color-mainColor: #8774e1;
+  --color-lightMainColor: #c77dff;
   --color-subText: #ced4da;
+  --color-darkerSubText: #808080;
 }
 
 body {
@@ -12,11 +17,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
 }
 
 .main-heading {
   font-size: var(--text-3xl);
   line-height: var(--tw-leading, var(--text-3xl--line-height));
+  font-weight: 500;
 }
 
 .sub-heading {
@@ -25,6 +33,7 @@ body {
     --tw-leading,
     var(--text-xl--line-height) /* calc(1.75 / 1.25) ≈ 1.4 */
   );
+  font-weight: 400;
 }
 
 .signUp-input-form {
@@ -43,4 +52,16 @@ body {
 
 .picture {
   height: 3rem;
+}
+
+.input-form {
+  border-width: 1px;
+  border-color: var(--color-mainColor);
+  border-radius: var(--radius-lg);
+}
+
+.input-form:focus {
+  --tw-outline-style: none;
+  outline-style: none;
+  border-color: var(--color-lightMainColor);
 }

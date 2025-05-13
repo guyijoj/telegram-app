@@ -6,12 +6,16 @@ import { RiTeamLine } from "react-icons/ri";
 import { GoMail } from "react-icons/go";
 import { AiOutlineSignature } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { IoClose } from "react-icons/io5";
+import { VscSettings } from "react-icons/vsc";
+import { IoCalendarOutline } from "react-icons/io5";
+import { GoTriangleDown } from "react-icons/go";
+import { GoTriangleUp } from "react-icons/go";
 
 type IconProps = {
-  name: keyof typeof icons;
+  name: string;
   size?: number;
-  color: String;
-  hover?: boolean;
+  color?: string;
 };
 
 // Объект с иконками
@@ -24,22 +28,20 @@ const icons = {
   mail: GoMail,
   renting: AiOutlineSignature,
   telephone: BsFillTelephoneFill,
+  filter: VscSettings,
+  goBack: IoClose,
+  calendar: IoCalendarOutline,
+  triangleUp: GoTriangleUp,
+  triangleDown: GoTriangleDown,
   no: null,
 };
 
-export const IconComponents = ({ name, size, color, hover }: IconProps) => {
-  const IconComponent = icons[name];
+export const IconComponents = ({ name, size, color = "" }: IconProps) => {
+  const IconComponent = icons[name as keyof typeof icons] || null;
 
   if (!IconComponent) {
     return null;
   }
 
-  return (
-    <IconComponent
-      size={size}
-      className={` text-${color} ${
-        hover ? `hover:text-mainColor` : null
-      } ease-in duration-300`}
-    />
-  );
+  return <IconComponent color={color} size={size} />;
 };
