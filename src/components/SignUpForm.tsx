@@ -1,5 +1,3 @@
-import React from "react";
-
 export const SignUpForm = () => {
   return (
     <div className="p-4 bg-subBackGround rounded-lg ">
