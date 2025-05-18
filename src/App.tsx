@@ -9,6 +9,7 @@ import { FindTeam } from "./components/FindTeamSection/FindTeam";
 import { Response } from "./components/ResponseSection.tsx/Response";
 import { Rentals } from "./components/RentalsSection/Rentals";
 import { CreatingWorkSheet } from "./components/EmploymentSection/CreatingWorkSheet";
+import { VacancyInfo } from "./components/EmploymentSection/VacancyInfo";
 
 const router = createBrowserRouter([
   {
@@ -72,10 +73,10 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/createWorkSheet",
+    path: "/vacancy",
     element: (
       <div>
-        <CreatingWorkSheet />,
+        <VacancyInfo />,
       </div>
     ),
   },

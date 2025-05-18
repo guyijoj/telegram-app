@@ -1,9 +1,12 @@
+import { useState } from "react";
 import { Forms } from "./Context/Context";
+import { NavLink } from "react-router-dom";
 
 interface VacanciesProps {
   data: Forms;
+  setButton: () => void;
 }
-export const VacanciesPart = ({ data }: VacanciesProps) => {
+export const VacanciesPart = ({ data, setButton }: VacanciesProps) => {
   return (
     <div className="container mx-auto not-odd:w-full p-3  border-1 border-mainColor rounded-lg mb-4.5">
       <div className="main-heading text-mainText mb-1.5">
@@ -27,9 +30,12 @@ export const VacanciesPart = ({ data }: VacanciesProps) => {
           : "Нет возможности экспедиции"}
       </p>
 
-      <a className="sub-heading block p-2 rounded-lg text-center text-subText bg-mainColor">
+      <button
+        onClick={() => setButton()}
+        className="sub-heading block w-full p-2 rounded-lg text-center text-subText bg-mainColor"
+      >
         Отликнуться
-      </a>
+      </button>
     </div>
   );
 };
